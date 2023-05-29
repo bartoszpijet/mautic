@@ -53,7 +53,7 @@
                 if (options.data == null) {
                     options.data = {};
                 }
-                options.data['field'] = options.jsonTermKey;
+                options.data['field'] = /.+\.(.*)/.exec(options.jsonTermKey)[1];
                 options.data['filter'] = val;
                 if (options.dataCallback != null) {
                     options.data = options.dataCallback(options.data);
