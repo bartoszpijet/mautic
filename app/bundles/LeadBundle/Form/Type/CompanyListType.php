@@ -19,7 +19,7 @@ class CompanyListType extends AbstractType
                 'entity_label_column' => 'companyname',
                 'modal_route'         => 'mautic_company_action',
                 'modal_header'        => 'mautic.company.new.company',
-                'model'               => 'company',
+                'model'               => 'lead.company',
                 'ajax_lookup_action'  => 'lead:fieldList',
                 'multiple'            => true,
                 'main_entity'         => null,
