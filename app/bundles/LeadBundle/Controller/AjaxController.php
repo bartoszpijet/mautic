@@ -157,7 +157,7 @@ class AjaxController extends CommonAjaxController
         if ('company' === $field->getObject()) {
             $results = $companyModel->getLookupResults('companyfield', [$fieldAlias, $filter]);
             foreach ($results as $r) {
-                $dataArray[] = ['text' => $r['label'], 'value' => $r['id']];
+                $dataArray[] = ['text' => $r['label'], 'value' => $r['id'], 'debug' => $r];
             }
         } elseif ('lead' === $field->getObject()) {
             $results = $fieldModel->getLookupResults($fieldAlias, $filter);
