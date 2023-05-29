@@ -53,8 +53,8 @@
                 if (options.data == null) {
                     options.data = {};
                 }
-                options.data['searchKey'] = options.jsonTermKey;
-                options.data[options.jsonTermKey] = val;
+                options.data['field'] = options.jsonTermKey;
+                options.data['filter'] = val;
                 if (options.dataCallback != null) {
                     options.data = options.dataCallback(options.data);
                 }
